@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href = "css/02.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class = "alert-box" id = "alert">
+        <p id = "title">Alter 박스</p>
+        <button id = "close"> X </button>
+        </div>
+        <button onclick="로그인();">버튼</button>
+        <button onclick="비밀번호();">닫기</button>
+        
+
+        
+    <script>
+        //오늘 배울거 : EventListener
+                                //이요소가                 //클릭되면
+                                                          //요건 이벤트, 여러 종류가 있음 
+        document.getElementById('close').addEventListener('click',function(){
+            //이 코드 실행시켜줘
+            document.getElementById('alert').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

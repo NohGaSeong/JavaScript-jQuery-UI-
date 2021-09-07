@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href = "css/02.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class = "alert-box" id = "alert">Alert 박스</div>
+    <button onclick="알림창열기()">버튼</button>
+    <button onclick="알림창닫기()">닫기</button>
+
+    <script>
+        //변경할 HTML 요소는 위에
+        //JS로 조작은 밑에서 (정 - 석)
+    
+      //걍 긴 코드 한글자로 치환하고 싶을때 쓰삼
+      function 알림창열기(){
+        document.getElementById('alert').style.display = 'block';
+      }
+
+      //숙제
+      function 알림창닫기(){
+          document.getElementById('alert').style.display = 'none';
+      }
+
+    </script>
+</body>
+</html>
